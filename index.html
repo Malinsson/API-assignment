@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API assignment</title>
     <link href="style.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header id="header-wrapper">
@@ -13,8 +18,8 @@
     </header>
     <main>
         <div id="animal">
-            <h2 id="name">Placeholder</h2>
-            <small id="scientific">Placeholder</small>
+            <h2 id="name">English name</h2>
+            <small id="scientific">Scientific name</small>
         </div>
         <audio controls>
             <source id="audio" src="" type="audio/mpeg">
@@ -22,6 +27,8 @@
         </audio>
 
     <form action="" method="post">
+        <div class="form-wrapper">
+            <div class="area-container">
         <label for="area">Continent:</label>
         <select id="area" name="area">
             <option value="america">America</option>
@@ -30,12 +37,16 @@
             <option value="australia">Australia</option>
             <option value="europe">Europe</option>
         </select>
+        </div>
+        <div class="animal-container">
         <label for="group">Animal Group:</label>
         <select id="group" name="group">
             <option value="birds">Birds</option>
             <option value="frogs">Frogs</option>
             <option value="grasshoppers">Grasshoppers</option>
         </select>
+        </div>
+        </div>
         <button id="submit" type="button">Submit</button>
     </form>
     </main>
