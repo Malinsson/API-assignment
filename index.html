@@ -7,7 +7,38 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    
+    <header id="header-wrapper">
+        <h1 id="header"></h1>
+        <p id="description"></p>
+    </header>
+    <main>
+        <div id="animal">
+            <h2 id="name">Placeholder</h2>
+            <small id="scientific">Placeholder</small>
+        </div>
+        <audio controls>
+            <source id="audio" src="" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+    <form action="" method="get">
+        <label for="area">Continent:</label>
+        <select id="area" name="area">
+            <option value="america">America</option>
+            <option value="africa">Africa</option>
+            <option value="asia">Asia</option>
+            <option value="australia">Australia</option>
+            <option value="europe">Europe</option>
+        </select>
+        <label for="group">Animal Group:</label>
+        <select id="group" name="group">
+            <option value="birds">Birds</option>
+            <option value="frogs">Frogs</option>
+            <option value="grasshoppers">Grasshoppers</option>
+        </select>
+        <button id="submit" type="button">Submit</button>
+    </form>
+    </main>
 
     <script src="script.js"></script>
 </body>
