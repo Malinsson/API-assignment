@@ -68,11 +68,22 @@ select{
     gap: 2rem;
 }
 
+.img-container{
+    width: 100%;
+}
+
+.background{
+    height: 100%;
+    width: 100%;
+}
+
 @media screen and (min-width:700px) {
 
 body {
+    align-items: flex-start;
     flex-direction: row;
-    gap: 4rem
+    gap: 4rem;
+    padding: 4rem;
 }
 #header-wrapper{
     width: 40%;
