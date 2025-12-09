@@ -68,6 +68,17 @@ select{
     gap: 2rem;
 }
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:700px) {
+
+body {
+    flex-direction: row;
+    gap: 4rem
+}
+#header-wrapper{
+    width: 40%;
+}
+main{
+    width: 60%;
+}
     
 }
