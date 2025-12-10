@@ -12,49 +12,59 @@
     
 </head>
 <body>
-    <header id="header-wrapper">
-        <div class="img-container">
-            <img class="background" src="./birds.svg">
-        </div>
-        <h1 id="header">Experience the sounds of Nature</h1>
-        <p id="description">Do you wish you were out in nature more? Does life or weather hold you back from going out there and experiencing it for yourself? Fear not! We offer hundreds of thousands of high-quality animal recordings from all over the globe! It's all just one click away so sit back and relax to the wonderful sounds of nature!</p>
-    </header>
-    <main>
-        <div id="animal">
-            <h2 id="name">English name</h2>
-            <small id="scientific">Scientific name</small>
-        </div>
-        <audio controls>
-            <source id="audio" src="" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
+    <div class="body-flex">
+        <section id="header-wrapper">
+            <div class="img-container">
+                <img class="background" src="./birds.svg">
+            </div>
+            <h1 id="header">Experience the sounds of Nature</h1>
+            <p id="description">Do you wish you were out in nature more? Does life or weather hold you back from going out there and experiencing it for yourself? Fear not! We offer hundreds of thousands of high-quality animal recordings from all over the globe! It's all just one click away so sit back and relax to the wonderful sounds of nature!</p>
+        </section>
 
-    <form action="" method="post">
-        <div class="form-wrapper">
-            <div class="area-container">
-        <label for="area">Continent:</label>
-        <select id="area" name="area">
-            <option value="america">America</option>
-            <option value="africa">Africa</option>
-            <option value="asia">Asia</option>
-            <option value="australia">Australia</option>
-            <option value="europe">Europe</option>
-        </select>
-        </div>
-        <div class="animal-container">
-        <label for="group">Animal Group:</label>
-        <select id="group" name="group">
-            <option value="birds">Birds</option>
-            <option value="frogs">Frogs</option>
-            <option value="grasshoppers">Grasshoppers</option>
-        </select>
-        </div>
-        </div>
-        <button id="submit" type="button">Submit</button>
-    </form>
+        <main>
+            <div id="animal">
+                <h2 id="name">English name</h2>
+                <small id="scientific">Scientific name</small>
+            </div>
+            <audio controls>
+                <source id="audio" src="" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
 
-
+        <form action="" method="post">
+            <div class="form-wrapper">
+                <div class="area-container">
+            <label for="area">Continent:</label>
+            <select id="area" name="area">
+                <option value="america">America</option>
+                <option value="africa">Africa</option>
+                <option value="asia">Asia</option>
+                <option value="australia">Australia</option>
+                <option value="europe">Europe</option>
+            </select>
+            </div>
+            <div class="animal-container">
+            <label for="group">Animal Group:</label>
+            <select id="group" name="group">
+                <option value="birds">Birds</option>
+                <option value="frogs">Frogs</option>
+                <option value="grasshoppers">Grasshoppers</option>
+            </select>
+            </div>
+            </div>
+            <button id="submit" type="button">Submit</button>
+        </form>
     </main>
+</div>
+
+    <div class="footer-wrapper">
+        <div class="footer-img-container">
+            <img class="background" src="./frogs.svg">
+        </div>
+        <div class="footer-img-container">
+            <img class="background" src="./grasshopper.svg">
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

@@ -30,7 +30,7 @@ body{
     padding: 2rem;
 }
 
-body, main {
+.body-flex, main {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -62,7 +62,7 @@ select{
     cursor: pointer;
 }
 
-.form-wrapper {
+.form-wrapper, .footer-wrapper {
     display: flex;
     justify-content: space-between;
     gap: 2rem;
@@ -77,19 +77,29 @@ select{
     width: 100%;
 }
 
-@media screen and (min-width:700px) {
+.footer-wrapper{
+    height: 3rem;
+    margin-top: 2rem;
+}
 
-body {
+@media screen and (min-width:700px) {
+body{
+    padding: 4rem;
+}
+.body-flex {
     align-items: flex-start;
     flex-direction: row;
     gap: 4rem;
-    padding: 4rem;
 }
 #header-wrapper{
     width: 40%;
 }
 main{
     width: 60%;
+}
+.footer-wrapper{
+    margin-top: 4rem;
+    height: 4rem;
 }
     
 }
