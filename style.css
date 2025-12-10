@@ -1,3 +1,6 @@
+:root{
+    --background-color: rgb(209, 209, 203);
+}
 * {
     box-sizing: border-box;
 }
@@ -26,7 +29,7 @@ h1, h2 {
 }
 
 body{
-    background-color: rgb(209, 209, 203);
+    background-color: var(--background-color);
     padding: 2rem;
 }
 
