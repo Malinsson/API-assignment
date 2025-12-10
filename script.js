@@ -4,6 +4,7 @@ const submit = document.querySelector('#submit');
 const audioElement = document.querySelector('audio');
 const genName = document.querySelector('#name');
 const scientificName = document.querySelector('#scientific');
+let lastName = null;
 
 const getAudio = async (group, area) => {
   try {
@@ -12,9 +13,25 @@ const getAudio = async (group, area) => {
     const data = await response.json();
     console.log(data);
 
-    const randomIndex = Math.floor(Math.random() * data.recordings.length);
+    let randomIndex;
+    let newName;
+
+    do {
+    randomIndex = Math.floor(Math.random() * data.recordings.length);
+    newName = data.recordings[randomIndex].en;
+    } while (newName === genName.textContent);
+
+    lastName = newName;
+
     audioElement.src = data.recordings[randomIndex].file;
+    audioElement.play();
+
+    if(data.recordings[randomIndex].en === "") {
+      genName.textContent = "Unknown Common Name";
+    } else {
     genName.textContent = data.recordings[randomIndex].en;
+    }
+
     scientificName.textContent = data.recordings[randomIndex].gen + ' ' + data.recordings[randomIndex].sp;
 
   } catch (error) {
